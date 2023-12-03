@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Set the character set and viewport for better compatibility -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to external stylesheet for better organization -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <!-- Set the title of the webpage -->
+    <title>Stopwatch App</title>
+</head>
+
+<body>
+    <!-- Container div for better organization and styling -->
+    <div id="container">
+        <!-- Stopwatch container with display and controls -->
+        <div id="stopwatch">
+            <!-- Display area for the stopwatch -->
+            <div id="display">00:00:00</div>
+
+            <!-- Controls section with buttons -->
+            <div id="controls">
+                <!-- Button to start/stop the stopwatch -->
+                <button onclick="startStop()">Start</button>
+
+                <!-- Button to reset the stopwatch -->
+                <button onclick="reset()">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to external JavaScript file for better separation of concerns -->
+    <script src="index.js"></script>
+</body>
+
+</html>

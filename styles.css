@@ -1,0 +1,38 @@
+/* Apply a flex container to the body for centering content vertically and horizontally */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fdfdfde3; /* Set a background color */
+}
+
+/* Style the container for better organization */
+#container {
+    text-align: center; /* Center align text content within the container */
+}
+
+/* Style for the stopwatch container */
+#stopwatch {
+    display: inline-block; /* Display as an inline-block for proper layout */
+    text-align: left; /* Align text content to the left within the stopwatch container */
+    padding: 20px;
+    border: 1px solid #110f0f;
+    background-color: #ed1f1f; /* Set a background color for the stopwatch */
+}
+
+/* Style for the stopwatch display */
+#display {
+    font-size: 2em;
+    margin-bottom: 20px; /* Add margin for separation from the controls */
+}
+
+/* Style for the stopwatch controls button */
+#controls button {
+    font-size: 1em;
+    margin: 0 5px; /* Add margin to separate buttons */
+    padding: 10px 20px;
+    cursor: pointer; /* Change cursor to pointer on hover for better user interaction */
+}
