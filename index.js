@@ -79,3 +79,9 @@ function elapsedTime() {
     // Return the time elapsed since the timer was started (or 0 if never started)
     return startTime ? Date.now() - startTime : 0;
 }
+
+// Get the current year
+const currentYear = new Date().getFullYear();
+
+// Update the footer year
+document.getElementById('year').textContent = currentYear;

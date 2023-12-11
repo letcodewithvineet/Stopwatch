@@ -1,9 +1,10 @@
 /* Apply a flex container to the body for centering content vertically and horizontally */
 body {
     display: flex;
+    flex-direction: column; /* Stack children vertically */
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh; /* Ensure the body takes up at least the entire viewport height */
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #fdfdfde3; /* Set a background color */
@@ -12,6 +13,7 @@ body {
 /* Style the container for better organization */
 #container {
     text-align: center; /* Center align text content within the container */
+    margin-top: 5rem;
 }
 
 /* Style for the stopwatch container */
@@ -21,7 +23,12 @@ body {
     padding: 20px;
     border: 1px solid #110f0f;
     background-color: #ed1f1f; /* Set a background color for the stopwatch */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    max-width: 100%; /* Ensure the container doesn't exceed the viewport width */
+    width: 100%; /* Ensure the container takes the full width of its parent */
+    overflow: hidden; /* Hide any content that exceeds the width */
 }
+
 
 /* Style for the stopwatch display */
 #display {
@@ -35,4 +42,14 @@ body {
     margin: 0 5px; /* Add margin to separate buttons */
     padding: 10px 20px;
     cursor: pointer; /* Change cursor to pointer on hover for better user interaction */
+}
+
+/* Style for the footer */
+footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    margin-top: auto; /* Align the footer at the bottom */
+    width: 100%;
 }

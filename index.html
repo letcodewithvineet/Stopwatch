@@ -14,23 +14,27 @@
 </head>
 
 <body>
-    <!-- Container div for better organization and styling -->
-    <div id="container">
-        <!-- Stopwatch container with display and controls -->
-        <div id="stopwatch">
-            <!-- Display area for the stopwatch -->
-            <div id="display">00:00:00</div>
+    <main>
+        <!-- Container div for better organization and styling -->
+        <div id="container">
+            <!-- Stopwatch container with display and controls -->
+            <div id="stopwatch">
+                <!-- Display area for the stopwatch -->
+                <div id="display">00:00:00</div>
 
-            <!-- Controls section with buttons -->
-            <div id="controls">
-                <!-- Button to start/stop the stopwatch -->
-                <button onclick="startStop()">Start</button>
+                <!-- Controls section with buttons -->
+                <div id="controls">
+                    <!-- Button to start/stop the stopwatch -->
+                    <button onclick="startStop()">Start</button>
 
-                <!-- Button to reset the stopwatch -->
-                <button onclick="reset()">Reset</button>
+                    <!-- Button to reset the stopwatch -->
+                    <button onclick="reset()">Reset</button>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
+
+    <footer id="footer">&copy; <span id="year"></span> Stopwatch App. All rights reserved.</footer>
 
     <!-- Link to external JavaScript file for better separation of concerns -->
     <script src="index.js"></script>
