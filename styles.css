@@ -27,24 +27,30 @@ body {
     max-width: 100%; /* Ensure the container doesn't exceed the viewport width */
     width: 100%; /* Ensure the container takes the full width of its parent */
     overflow: hidden; /* Hide any content that exceeds the width */
+    transition: background-color 0.3s ease; /* Add a smooth transition for the background color */
 }
 
-
-/* Style for the stopwatch display */
+/* Style for the stopwatch display with additional animation */
 #display {
     font-size: 2em;
     margin-bottom: 20px; /* Add margin for separation from the controls */
+    transition: color 0.3s ease; /* Add color transition for display */
 }
 
-/* Style for the stopwatch controls button */
+/* Style for the stopwatch controls button with additional animation */
 #controls button {
     font-size: 1em;
     margin: 0 5px; /* Add margin to separate buttons */
     padding: 10px 20px;
     cursor: pointer; /* Change cursor to pointer on hover for better user interaction */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Add transitions for button background color and text color */
+    background-color: #333; /* Set initial background color */
+    color: #fff; /* Set initial text color */
+    border: none; /* Remove default button border */
+    border-radius: 5px; /* Add a slight border radius */
 }
 
-/* Style for the footer */
+/* Style for the footer with additional animation */
 footer {
     background-color: #333;
     padding: 20px;
@@ -52,4 +58,17 @@ footer {
     color: #fff;
     margin-top: auto; /* Align the footer at the bottom */
     width: 100%;
+    transition: background-color 0.3s ease; /* Add transition for the background color */
+}
+
+/* Hover styles for the controls button */
+#controls button:hover {
+    background-color: #555; /* Change background color on hover */
+    color: #ed1f1f; /* Change text color on hover */
+}
+
+/* Hover styles for the footer */
+footer:hover {
+    background-color: #555; /* Change background color on hover */
+    color: #ed1f1f; /* Change text color on hover */
 }
