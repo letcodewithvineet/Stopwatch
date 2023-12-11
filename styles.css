@@ -1,4 +1,5 @@
 /* Apply a flex container to the body for centering content vertically and horizontally */
+/* Apply a flex container to the body for centering content vertically and horizontally */
 body {
     display: flex;
     flex-direction: column; /* Stack children vertically */
@@ -8,6 +9,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #fdfdfde3; /* Set a background color */
+    overflow-x: hidden; /* Hide horizontal overflow */
 }
 
 /* Style the container for better organization */
@@ -30,27 +32,21 @@ body {
     transition: background-color 0.3s ease; /* Add a smooth transition for the background color */
 }
 
-/* Style for the stopwatch display with additional animation */
+/* Style for the stopwatch display */
 #display {
     font-size: 2em;
     margin-bottom: 20px; /* Add margin for separation from the controls */
-    transition: color 0.3s ease; /* Add color transition for display */
 }
 
-/* Style for the stopwatch controls button with additional animation */
+/* Style for the stopwatch controls button */
 #controls button {
     font-size: 1em;
     margin: 0 5px; /* Add margin to separate buttons */
     padding: 10px 20px;
     cursor: pointer; /* Change cursor to pointer on hover for better user interaction */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Add transitions for button background color and text color */
-    background-color: #333; /* Set initial background color */
-    color: #fff; /* Set initial text color */
-    border: none; /* Remove default button border */
-    border-radius: 5px; /* Add a slight border radius */
 }
 
-/* Style for the footer with additional animation */
+/* Style for the footer */
 footer {
     background-color: #333;
     padding: 20px;
@@ -58,8 +54,8 @@ footer {
     color: #fff;
     margin-top: auto; /* Align the footer at the bottom */
     width: 100%;
-    transition: background-color 0.3s ease; /* Add transition for the background color */
 }
+
 
 /* Hover styles for the controls button */
 #controls button:hover {
